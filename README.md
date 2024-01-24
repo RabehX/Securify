@@ -1,6 +1,6 @@
 # Securify
 
-<img src="images/icon.png" style="width: 96px;" alt="logo">
+<img src="icon/icon.png" style="width: 96px;" alt="logo">
 
 Yet another detection app to detect Magisk or KernelSU.
 
