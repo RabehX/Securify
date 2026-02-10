@@ -13,6 +13,3 @@ Yet another detection app to detect Magisk or KernelSU.
 - UI follows [Material Design 3](https://m3.material.io/) with a dynamic color theme.
 - All ABI are currently supported.
 - Supports Android-based emulators.
-
-## Credits
-- [LSPosed](https://github.com/LSPosed/LSPosed): Some designs and code have been taken.
