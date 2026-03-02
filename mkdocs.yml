@@ -1,0 +1,25 @@
+site_name: Securify
+site_url: https://rabehx.github.io/Securify/
+repo_url: https://github.com/RabehX/Securify
+repo_name: RabehX/Securify
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
