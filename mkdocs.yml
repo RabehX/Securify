@@ -2,6 +2,7 @@ site_name: Securify
 site_url: https://rabehx.github.io/Securify/
 repo_url: https://github.com/RabehX/Securify
 repo_name: RabehX/Securify
+site_description: Securify documentation
 
 theme:
   name: material
@@ -23,3 +24,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Privacy Policy: PRIVACY_POLICY.md
+  - Terms of Service: TERMS_OF_SERVICE.md
