@@ -40,7 +40,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           API_URL: ${{ secrets.API_URL }}
           CLOUD_PROJECT_NUMBER: ${{ secrets.CLOUD_PROJECT_NUMBER }}
-        run: ./gradlew testReleaseUnitTest --no-daemon
+        run: ./gradlew :app:testReleaseUnitTest --no-daemon
 
       - name: Upload APK
         uses: actions/upload-artifact@v7
