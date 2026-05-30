@@ -89,10 +89,6 @@ jobs:
             ## What's Changed
 
             ${{ steps.changelog.outputs.changelog }}
-
-            ---
-
-            > **Install:** Download `Securify-${{ env.VERSION }}-release.apk` below.
           files: Securify-${{ env.VERSION }}-release.apk
           generate_release_notes: true
           make_latest: true
