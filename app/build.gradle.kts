@@ -58,8 +58,8 @@ android {
 
     defaultConfig {
         applicationId = "io.github.rabehx.securify"
-        versionCode = 10401
-        versionName = "1.4.1"
+        versionCode = 10400
+        versionName = "1.4.0"
         buildConfigField("long", "BUILD_TIME", "${Instant.now().epochSecond}L")
         buildConfigField("String", "API_URL", "\"$apiUrl\"")
         buildConfigField("long", "CLOUD_PROJECT_NUMBER", "${cloudProjectNumber}L")
