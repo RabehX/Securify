@@ -6,7 +6,7 @@ coreTesting = "2.2.0"
 junit = "4.13.2"
 kotlin = "2.3.21"
 kotlinxCoroutines = "1.11.0"
-ksp = "2.3.7"
+ksp = "2.3.9"
 
 # DI
 hilt = "2.59.2"
