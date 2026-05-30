@@ -8,6 +8,7 @@ import dagger.hilt.components.SingletonComponent
 import io.github.rabehx.securify.network.NetworkConfig
 import io.github.rabehx.securify.network.api.GitHubApi
 import io.github.rabehx.securify.network.api.IntegrityApi
+import javax.inject.Named
 import javax.inject.Singleton
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -40,6 +41,16 @@ object NetworkModule {
 
     @Provides
     @Singleton
+    @Named("integrity")
+    fun provideIntegrityOkHttp(): OkHttpClient {
+        return OkHttpClient.Builder()
+            .connectTimeout(30, TimeUnit.SECONDS)
+            .readTimeout(30, TimeUnit.SECONDS)
+            .build()
+    }
+
+    @Provides
+    @Singleton
     fun provideRetrofit(okHttp: OkHttpClient, config: NetworkConfig): Retrofit {
         return Retrofit.Builder()
             .baseUrl(config.apiUrl)
@@ -50,8 +61,17 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideIntegrityApi(retrofit: Retrofit): IntegrityApi =
-        retrofit.create(IntegrityApi::class.java)
+    fun provideIntegrityApi(
+        @Named("integrity") okHttp: OkHttpClient,
+        config: NetworkConfig,
+    ): IntegrityApi {
+        return Retrofit.Builder()
+            .baseUrl(config.apiUrl)
+            .addConverterFactory(GsonConverterFactory.create())
+            .client(okHttp)
+            .build()
+            .create(IntegrityApi::class.java)
+    }
 
     @Provides
     @Singleton
