@@ -1,7 +1,7 @@
 <div align="center">
-<img src="icon.png" width="108" alt="Securify logo" />
+<img src="docs/screenshots/cover/feature-graphic.png" width="1200" alt="Securify Feature Graphic" />
   
-## About
+# About
 **Yet Another Root Checker and Play Integrity API Application.**
  
 [![Stars](https://img.shields.io/github/stars/RabahX/Securify?label=Stars)](https://github.com/RabahX)
@@ -13,6 +13,7 @@
 
 ## Screenshots 
 
+<img src="docs/screenshots/overview/discover-securify.png" width="200" alt="Securify – Discover screen" /> <img src="docs/screenshots/overview/dark-mode.png" width="200" alt="Securify – Dark mode" /> <img src="docs/screenshots/overview/dynamic-color.png" width="200" alt="Securify – Dynamic color" /> <img src="docs/screenshots/settings/interface.png" width="200" alt="Securify – Interface settings" /> <img src="docs/screenshots/settings/interface-alt.png" width="200" alt="Securify – Interface settings (alt)" /> 
 
 ## Features
 
@@ -31,7 +32,7 @@
 > To [verify](https://developer.android.com/studio/command-line/apksigner#usage-verify) the APK
 > downloaded from GitHub, use the following signing certificate fingerprints:
 > ```
->   SHA1: 88:BC:B1:99:44:CC:68:6C:D8:A0:4B:D2:74:E1:2B:CC:12:82:60:86
+> SHA1: 88:BC:B1:99:44:CC:68:6C:D8:A0:4B:D2:74:E1:2B:CC:12:82:60:86
 > SHA256: 64:F1:E8:E1:9D:9E:38:DA:6E:F3:92:F6:D4:1C:5B:65:14:6C:BB:42:12:B4:94:4D:2B:19:39:C6:7B:24:78:24
 > ```
 > The SHA256 and MD5 hashes of the individual APK files are also available in the `checksum.txt`
