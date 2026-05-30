@@ -1,0 +1,131 @@
+<resources>
+    <!-- Home -->
+    <string name="overview">Overview</string>
+    <string name="version">Version: %1$s (code %2$d)</string>
+    <string name="detections">Detections</string>
+    <string name="play_integrity">Integrity</string>
+
+    <!-- Home / Device Info -->
+    <string name="kernel_version">Kernel Version</string>
+    <string name="device_name">Device Name</string>
+    <string name="system_abi">System ABI</string>
+    <string name="system_version">System version</string>
+    <string name="security_patch_level">Security Patch Level</string>
+    <string name="fingerprint">Fingerprint</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="settings_general">General</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_legalities">Legalities</string>
+    <string name="settings_about">About</string>
+
+    <!-- Settings - General -->
+    <string name="battery_configuration">Battery Optimization</string>
+    <string name="battery_configuration_desc">Ignore battery optimization for better performance.</string>
+    <string name="language">Language</string>
+    <string name="export_logcat">Export Logcat</string>
+    <string name="export_logcat_desc">Save detailed logcat output as a text file for debugging or sharing.</string>
+    <string name="export_logcat_directory">Export Directory</string>
+    <string name="export_logcat_directory_desc">Choose where to save logcat exports.</string>
+
+    <!-- Settings - Appearance -->
+    <string name="dynamic_color">Dynamic Color</string>
+    <string name="dynamic_color_desc">Apply wallpaper color to the app theme</string>
+    <string name="amoled_theme">AMOLED Theme</string>
+    <string name="amoled_theme_desc">Apply pure black when dark mode is active</string>
+    <string name="theme">Theme</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="select_theme_color">Select Theme Color</string>
+    <string name="theme_color_mocha_mousse">Mocha Mousse</string>
+    <string name="theme_color_peach_fuzz">Peach Fuzz</string>
+    <string name="theme_color_viva_magenta">Viva Magenta</string>
+    <string name="theme_color_very_peri">Very Peri</string>
+    <string name="theme_color_ultimate_gray">Ultimate Gray</string>
+    <string name="theme_color_illuminating">Illuminating</string>
+    <string name="theme_color_classic_blue">Classic Blue</string>
+    <string name="theme_color_living_coral">Living Coral</string>
+    <string name="system_default">System Default</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+
+    <!-- Settings - Legalities -->
+    <string name="disclaimer">Disclaimer</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+    <!-- Settings - About -->
+    <string name="support">Support</string>
+    <string name="github">GitHub</string>
+    <string name="telegram">Telegram</string>
+    <string name="device_recognition_verdict">Device recognition verdict</string>
+
+    <!-- Play Integrity -->
+    <string name="app_recognition_verdict">App Recognition Verdict</string>
+    <string name="package_name">Package Name</string>
+    <string name="device_activity_level">Device Activity Level</string>
+    <string name="app_licensing_verdict">App Licensing Verdict</string>
+    <string name="certificate_sha256">Certificate SHA256</string>
+
+    <string name="threats_found">Threats Found</string>
+    <string name="all_clear">All Clear</string>
+    <string name="tap_to_view">Tap to view</string>
+    <string name="back">Back</string>
+
+    <!-- Integrity -->
+    <string name="integrity_requesting">Requesting…</string>
+    <string name="integrity_run">Run Play Integrity Request</string>
+    <string name="integrity_basic">Basic Integrity</string>
+    <string name="integrity_device">Device Integrity</string>
+    <string name="integrity_strong">Strong Integrity</string>
+    <string name="integrity_passed">Passed</string>
+    <string name="integrity_failed">Failed</string>
+    <string name="integrity_error">Integrity check failed</string>
+    <string name="integrity_retry">Retry</string>
+    <string name="integrity_dismiss">Dismiss</string>
+
+    <!-- Integrity Error Code Names -->
+    <string name="integrity_code_no_error">No Error</string>
+    <string name="integrity_code_api_not_available">API Not Available</string>
+    <string name="integrity_code_play_store_not_found">Play Store Not Found</string>
+    <string name="integrity_code_network_error">Network Error</string>
+    <string name="integrity_code_account_not_found">Play Store Account Not Found</string>
+    <string name="integrity_code_app_not_installed">App Not Installed</string>
+    <string name="integrity_code_play_services_not_found">Play Services Not Found</string>
+    <string name="integrity_code_uid_mismatch">App UID Mismatch</string>
+    <string name="integrity_code_too_many_requests">Too Many Requests</string>
+    <string name="integrity_code_cannot_bind">Cannot Bind to Service</string>
+    <string name="integrity_code_nonce_too_short">Nonce Too Short</string>
+    <string name="integrity_code_nonce_too_long">Nonce Too Long</string>
+    <string name="integrity_code_server_unavailable">Google Server Unavailable</string>
+    <string name="integrity_code_nonce_not_base64">Nonce Is Not Base64</string>
+    <string name="integrity_code_play_store_outdated">Play Store Version Outdated</string>
+    <string name="integrity_code_play_services_outdated">Play Services Version Outdated</string>
+    <string name="integrity_code_cloud_project_invalid">Cloud Project Number Invalid</string>
+    <string name="integrity_code_client_transient">Client Transient Error</string>
+    <string name="integrity_code_internal_error">Internal Error</string>
+    <string name="integrity_code_unknown">Unknown Error</string>
+
+    <!-- Integrity Error Help Messages -->
+    <string name="integrity_error_prefix">Play Integrity failed: %1$s (%2$d). %3$s</string>
+    <string name="integrity_error_prefix_short">Play Integrity failed: %1$s (%2$d)</string>
+    <string name="integrity_error_generic">Play Integrity failed: %1$s</string>
+    <string name="integrity_help_api_not_available">Play Integrity API is not available on this device or Play Store build.</string>
+    <string name="integrity_help_play_store_not_found">Install or enable the official Google Play Store.</string>
+    <string name="integrity_help_network_error">Check the network connection and retry.</string>
+    <string name="integrity_help_account_not_found">Sign in to the Play Store and retry.</string>
+    <string name="integrity_help_app_not_installed">Install the app through Google Play for full verdict support.</string>
+    <string name="integrity_help_play_services_not_found">Install or enable Google Play services.</string>
+    <string name="integrity_help_uid_mismatch">The calling app UID does not match the package installed by Play.</string>
+    <string name="integrity_help_too_many_requests">Too many requests were made. Retry later.</string>
+    <string name="integrity_help_cannot_bind">Update the Google Play Store and retry.</string>
+    <string name="integrity_help_nonce_too_short">The nonce is too short.</string>
+    <string name="integrity_help_nonce_too_long">The nonce is too long.</string>
+    <string name="integrity_help_server_unavailable">Google servers are temporarily unavailable. Retry later.</string>
+    <string name="integrity_help_nonce_not_base64">The nonce is not accepted by Play Integrity.</string>
+    <string name="integrity_help_play_store_outdated">Update the Google Play Store.</string>
+    <string name="integrity_help_play_services_outdated">Update Google Play services.</string>
+    <string name="integrity_help_cloud_project_invalid">Use the Google Cloud project linked in Play Console, or omit the cloud project number for Play-distributed apps.</string>
+    <string name="integrity_help_client_transient">Temporary client error. Retry later.</string>
+    <string name="integrity_help_internal_error">Internal Play Integrity error. Retry later.</string>
+</resources>

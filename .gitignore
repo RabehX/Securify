@@ -1,0 +1,77 @@
+# Gradle / build outputs
+.gradle/
+.kotlin/
+build/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+
+# Android local machine files
+local.properties
+*.iml
+.idea/
+
+# Signing keys and release credentials
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.pk8
+*.der
+*.crt
+*.csr
+*.key
+keystore/
+upload-keystore.jks
+upload.keystore
+
+# Play Store / private release artifacts
+*.apk
+*.aab
+*.apks
+*.idsig
+output-metadata.json
+mapping.txt
+seeds.txt
+usage.txt
+resources.txt
+
+# Firebase / Google Services / Crashlytics private config
+google-services.json
+**/google-services.json
+GoogleService-Info.plist
+**/GoogleService-Info.plist
+service-account.json
+serviceAccountKey.json
+*-service-account.json
+firebase-service-account*.json
+firebase-debug.log
+crashlytics-build.properties
+com_crashlytics_export_strings.xml
+
+# Ads / Play-only local config
+admob.properties
+ads.properties
+play.properties
+play-services.json
+
+# Keep private Play Store config out of the public FOSS source tree.
+app/src/play/
+app/src/testPlay/
+
+# Reports and generated logs
+*.log
+server.log
+captures/
+lint-results*.html
+lint-results*.xml
+lint-results*.txt
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.swo

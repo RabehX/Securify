@@ -1,0 +1,131 @@
+<resources>
+    <!-- الرئيسية -->
+    <string name="overview">نظرة عامة</string>
+    <string name="version">الإصدار: %1$s (الرمز %2$d)</string>
+    <string name="detections">عمليات الكشف</string>
+    <string name="play_integrity">سلامة الجهاز</string>
+
+    <!-- الرئيسية / معلومات الجهاز -->
+    <string name="kernel_version">إصدار النواة</string>
+    <string name="device_name">اسم الجهاز</string>
+    <string name="system_abi">معمارية النظام (ABI)</string>
+    <string name="system_version">إصدار النظام</string>
+    <string name="security_patch_level">مستوى تصحيح الأمان</string>
+    <string name="fingerprint">بصمة النظام</string>
+
+    <!-- الإعدادات -->
+    <string name="settings">الإعدادات</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_appearance">المظهر</string>
+    <string name="settings_legalities">الشؤون القانونية</string>
+    <string name="settings_about">حول</string>
+
+    <!-- الإعدادات - عام -->
+    <string name="battery_configuration">تحسين البطارية</string>
+    <string name="battery_configuration_desc">تجاهل تحسين البطارية للحصول على أداء أفضل.</string>
+    <string name="language">اللغة</string>
+    <string name="export_logcat">تصدير Logcat</string>
+    <string name="export_logcat_desc">حفظ مخرجات Logcat التفصيلية كملف نصي لأغراض التصحيح أو المشاركة.</string>
+    <string name="export_logcat_directory">مجلد التصدير</string>
+    <string name="export_logcat_directory_desc">اختر مكان حفظ ملفات Logcat المصدّرة.</string>
+
+    <!-- الإعدادات - المظهر -->
+    <string name="dynamic_color">الألوان الديناميكية</string>
+    <string name="dynamic_color_desc">تطبيق لون الخلفية على سمة التطبيق</string>
+    <string name="amoled_theme">سمة AMOLED</string>
+    <string name="amoled_theme_desc">تطبيق الأسود الكامل عند تفعيل الوضع الداكن</string>
+    <string name="theme">السمة</string>
+    <string name="theme_color">لون السمة</string>
+    <string name="select_theme_color">اختر لون السمة</string>
+    <string name="theme_color_mocha_mousse">موكا موس</string>
+    <string name="theme_color_peach_fuzz">بيتش فَز</string>
+    <string name="theme_color_viva_magenta">فيفا ماجينتا</string>
+    <string name="theme_color_very_peri">فيري بيري</string>
+    <string name="theme_color_ultimate_gray">ألتميت غراي</string>
+    <string name="theme_color_illuminating">إلومينيتينغ</string>
+    <string name="theme_color_classic_blue">كلاسيك بلو</string>
+    <string name="theme_color_living_coral">ليفينغ كورال</string>
+    <string name="system_default">افتراضي النظام</string>
+    <string name="light">فاتح</string>
+    <string name="dark">داكن</string>
+
+    <!-- الإعدادات - الشؤون القانونية -->
+    <string name="disclaimer">إخلاء المسؤولية</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="terms_of_service">شروط الاستخدام</string>
+
+    <!-- الإعدادات - حول -->
+    <string name="support">الدعم</string>
+    <string name="github">GitHub</string>
+    <string name="telegram">Telegram</string>
+    <string name="device_recognition_verdict">نتيجة التعرف على الجهاز</string>
+
+    <!-- سلامة Play -->
+    <string name="app_recognition_verdict">نتيجة التعرف على التطبيق</string>
+    <string name="package_name">اسم الحزمة</string>
+    <string name="device_activity_level">مستوى نشاط الجهاز</string>
+    <string name="app_licensing_verdict">نتيجة ترخيص التطبيق</string>
+    <string name="certificate_sha256">شهادة SHA256</string>
+
+    <string name="threats_found">تم العثور على تهديدات</string>
+    <string name="all_clear">لا توجد تهديدات</string>
+    <string name="tap_to_view">اضغط للعرض</string>
+    <string name="back">رجوع</string>
+
+    <!-- سلامة Play -->
+    <string name="integrity_requesting">جارٍ الطلب…</string>
+    <string name="integrity_run">تشغيل فحص سلامة Play</string>
+    <string name="integrity_basic">السلامة الأساسية</string>
+    <string name="integrity_device">سلامة الجهاز</string>
+    <string name="integrity_strong">السلامة القوية</string>
+    <string name="integrity_passed">نجح</string>
+    <string name="integrity_failed">فشل</string>
+    <string name="integrity_error">فشل فحص السلامة</string>
+    <string name="integrity_retry">إعادة المحاولة</string>
+    <string name="integrity_dismiss">إغلاق</string>
+
+    <!-- أسماء رموز أخطاء السلامة -->
+    <string name="integrity_code_no_error">لا يوجد خطأ</string>
+    <string name="integrity_code_api_not_available">الواجهة غير متاحة</string>
+    <string name="integrity_code_play_store_not_found">متجر Play غير موجود</string>
+    <string name="integrity_code_network_error">خطأ في الشبكة</string>
+    <string name="integrity_code_account_not_found">حساب Play غير موجود</string>
+    <string name="integrity_code_app_not_installed">التطبيق غير مثبت</string>
+    <string name="integrity_code_play_services_not_found">خدمات Play غير موجودة</string>
+    <string name="integrity_code_uid_mismatch">عدم تطابق معرّف التطبيق</string>
+    <string name="integrity_code_too_many_requests">طلبات كثيرة جدًا</string>
+    <string name="integrity_code_cannot_bind">تعذّر الربط بالخدمة</string>
+    <string name="integrity_code_nonce_too_short">قيمة Nonce قصيرة جدًا</string>
+    <string name="integrity_code_nonce_too_long">قيمة Nonce طويلة جدًا</string>
+    <string name="integrity_code_server_unavailable">خادم Google غير متاح</string>
+    <string name="integrity_code_nonce_not_base64">قيمة Nonce ليست بصيغة Base64</string>
+    <string name="integrity_code_play_store_outdated">إصدار متجر Play قديم</string>
+    <string name="integrity_code_play_services_outdated">إصدار خدمات Play قديم</string>
+    <string name="integrity_code_cloud_project_invalid">رقم مشروع Cloud غير صالح</string>
+    <string name="integrity_code_client_transient">خطأ مؤقت في العميل</string>
+    <string name="integrity_code_internal_error">خطأ داخلي</string>
+    <string name="integrity_code_unknown">خطأ غير معروف</string>
+
+    <!-- رسائل مساعدة أخطاء السلامة -->
+    <string name="integrity_error_prefix">فشل فحص سلامة Play: %1$s (%2$d). %3$s</string>
+    <string name="integrity_error_prefix_short">فشل فحص سلامة Play: %1$s (%2$d)</string>
+    <string name="integrity_error_generic">فشل فحص سلامة Play: %1$s</string>
+    <string name="integrity_help_api_not_available">واجهة سلامة Play غير متوفرة على هذا الجهاز أو إصدار المتجر.</string>
+    <string name="integrity_help_play_store_not_found">قم بتثبيت أو تفعيل متجر Google Play الرسمي.</string>
+    <string name="integrity_help_network_error">تحقق من اتصال الشبكة وأعد المحاولة.</string>
+    <string name="integrity_help_account_not_found">سجّل الدخول إلى متجر Play وأعد المحاولة.</string>
+    <string name="integrity_help_app_not_installed">ثبّت التطبيق عبر Google Play للحصول على دعم كامل للتحقق.</string>
+    <string name="integrity_help_play_services_not_found">قم بتثبيت أو تفعيل خدمات Google Play.</string>
+    <string name="integrity_help_uid_mismatch">معرّف التطبيق (UID) لا يتطابق مع الحزمة المثبتة عبر Play.</string>
+    <string name="integrity_help_too_many_requests">تم إرسال طلبات كثيرة جدًا. أعد المحاولة لاحقًا.</string>
+    <string name="integrity_help_cannot_bind">قم بتحديث متجر Google Play وأعد المحاولة.</string>
+    <string name="integrity_help_nonce_too_short">قيمة nonce قصيرة جدًا.</string>
+    <string name="integrity_help_nonce_too_long">قيمة nonce طويلة جدًا.</string>
+    <string name="integrity_help_server_unavailable">خوادم Google غير متاحة مؤقتًا. أعد المحاولة لاحقًا.</string>
+    <string name="integrity_help_nonce_not_base64">قيمة nonce غير مقبولة من سلامة Play.</string>
+    <string name="integrity_help_play_store_outdated">قم بتحديث متجر Google Play.</string>
+    <string name="integrity_help_play_services_outdated">قم بتحديث خدمات Google Play.</string>
+    <string name="integrity_help_cloud_project_invalid">استخدم مشروع Google Cloud المرتبط بـ Play Console، أو احذف رقم المشروع للتطبيقات الموزعة عبر Play.</string>
+    <string name="integrity_help_client_transient">خطأ مؤقت في العميل. أعد المحاولة لاحقًا.</string>
+    <string name="integrity_help_internal_error">خطأ داخلي في سلامة Play. أعد المحاولة لاحقًا.</string>
+</resources>

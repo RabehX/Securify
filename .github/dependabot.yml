@@ -1,0 +1,42 @@
+version: 2
+
+updates:
+  # Gradle dependencies (version catalog)
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      compose:
+        patterns:
+          - "androidx.compose*"
+      androidx:
+        patterns:
+          - "androidx.*"
+        exclude-patterns:
+          - "androidx.compose*"
+      firebase:
+        patterns:
+          - "com.google.firebase*"
+      kotlin:
+        patterns:
+          - "org.jetbrains.kotlin*"
+      hilt:
+        patterns:
+          - "com.google.dagger*"
+      network:
+        patterns:
+          - "com.squareup.*"
+    labels:
+      - "dependencies"
+    open-pull-requests-limit: 15
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "ci"
