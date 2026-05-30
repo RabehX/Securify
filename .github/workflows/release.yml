@@ -66,6 +66,14 @@ jobs:
           APK=$(find app/build/outputs/apk/release -name "*.apk" -not -name "*unsigned*" | head -1)
           cp "$APK" "Securify-${VERSION}-release.apk"
 
+      - name: Generate checksums
+        run: |
+          APK="Securify-${VERSION}-release.apk"
+          {
+            echo "SHA256: $(sha256sum "$APK" | awk '{print $1}')"
+            echo "MD5: $(md5sum "$APK" | awk '{print $1}')"
+          } > checksum.txt
+
       - name: Generate changelog
         id: changelog
         run: |
@@ -89,6 +97,8 @@ jobs:
             ## What's Changed
 
             ${{ steps.changelog.outputs.changelog }}
-          files: Securify-${{ env.VERSION }}-release.apk
+          files: |
+            Securify-${{ env.VERSION }}-release.apk
+            checksum.txt
           generate_release_notes: true
           make_latest: true
