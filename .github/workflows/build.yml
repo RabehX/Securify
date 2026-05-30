@@ -43,7 +43,7 @@ jobs:
         run: ./gradlew testReleaseUnitTest --no-daemon
 
       - name: Upload APK
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: github.event_name == 'push'
         with:
           name: securify-release
