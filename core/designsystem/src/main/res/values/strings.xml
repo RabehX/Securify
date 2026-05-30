@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Back</string>
+    <string name="threats_found">Threats Found</string>
+    <string name="all_clear">All Clear</string>
+    <string name="tap_to_view">Tap to view</string>
+</resources>

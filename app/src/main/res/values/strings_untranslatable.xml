@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name" translatable="false">Securify</string>
+    <string name="en" translatable="false">English</string>
+    <string name="ar" translatable="false">العربية</string>
+    <string name="developer_github_url" translatable="false">https://github.com/RabehX</string>
+    <string name="developer_telegram_url" translatable="false">https://t.me/RabehX</string>
+</resources>

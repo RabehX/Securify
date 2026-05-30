@@ -1,0 +1,201 @@
+[versions]
+# Build
+androidGradlePlugin = "9.2.1"
+projectguard = "1.0.0-rc03"
+coreTesting = "2.2.0"
+junit = "4.13.2"
+kotlin = "2.3.21"
+kotlinxCoroutines = "1.11.0"
+ksp = "2.3.7"
+
+# DI
+hilt = "2.59.2"
+hiltNavigation = "1.3.0"
+
+# AndroidX
+androidxCore = "1.18.0"
+androidxAppcompat = "1.7.1"
+androidxActivity = "1.13.0"
+androidxLifecycle = "2.10.0"
+androidxDatastore = "1.2.1"
+
+# Compose
+composeBom = "2026.05.01"
+composeMaterial3 = "1.5.0-alpha20"
+composeMaterial3Adaptive = "1.2.0"
+composeIcons = "1.7.8"
+composeUi = "1.11.2"
+mockk = "1.14.9"
+navigation3 = "1.1.2"
+
+# Material
+androidMaterial = "1.14.0"
+materialKolor = "4.1.1"
+
+# Other
+kotlinxSerialization = "1.11.0"
+javaxInject = "1"
+lsparanoid = "0.6.0"
+integrity = "1.6.0"
+okhttp = "5.3.2"
+retrofit = "3.0.0"
+rei = "1.1.3"
+tablerIcon = "3.44.0"
+turbine = "1.2.1"
+
+[libraries]
+# Compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeUi" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "composeMaterial3" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "composeUi" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "composeUi" }
+androidx-compose-icons = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeIcons" }
+androidx-compose-fonts = { module = "androidx.compose.ui:ui-text-google-fonts", version.ref = "composeUi" }
+androidx-compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeUi" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeUi" }
+
+# Adaptive
+androidx-compose-material3-adaptive = { group = "androidx.compose.material3.adaptive", name = "adaptive", version.ref = "composeMaterial3Adaptive" }
+androidx-compose-material3-adaptive-layout = { group = "androidx.compose.material3.adaptive", name = "adaptive-layout", version.ref = "composeMaterial3Adaptive" }
+androidx-compose-material3-adaptive-navigation = { group = "androidx.compose.material3.adaptive", name = "adaptive-navigation", version.ref = "composeMaterial3Adaptive" }
+
+# AndroidX
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+androidx-datastore-core = { group = "androidx.datastore", name = "datastore", version.ref = "androidxDatastore" }
+
+# Lifecycle
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
+androidx-lifecycle-viewModel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
+
+# Navigation
+androidx-navigation3 = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+
+# Hilt
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+androidx-hilt = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
+javaxInject = { group = "javax.inject", name = "javax.inject", version.ref = "javaxInject" }
+
+# Serialization & Coroutines
+junit = { module = "junit:junit", version.ref = "junit" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutines" }
+kotlinx-coroutines-play-services = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services", version.ref = "kotlinxCoroutines" }
+kotlinx-serialization-protobuf = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-protobuf", version.ref = "kotlinxSerialization" }
+
+# Network
+retrofit-core = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+
+# Material
+android-material = { group = "com.google.android.material", name = "material", version.ref = "androidMaterial" }
+material-kolor = { group = "com.materialkolor", name = "material-kolor", version.ref = "materialKolor" }
+
+# Security & Other
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+rei = { module = "io.github.rabehx:rei", version.ref = "rei" }
+integrity = { module = "com.google.android.play:integrity", version.ref = "integrity" }
+tabler-icon = { group = "io.github.lyxnx.compose.ui", name = "tabler-icons", version.ref = "tablerIcon" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "composeUi" }
+
+android-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+compose-gradle = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+kotlin-gradle = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+ksp-gradle = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+projectguard = { id = "com.rubensousa.projectguard", version.ref = "projectguard" }
+lsp = { id = "org.lsposed.lsparanoid", version.ref = "lsparanoid" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+# Plugins defined by this project
+self-application = { id = "self.application", version = "unspecified" }
+self-library = { id = "self.library", version = "unspecified" }
+self-compose = { id = "self.compose", version = "unspecified" }
+self-compose-library = { id = "self.compose.library", version = "unspecified" }
+self-hilt = { id = "self.hilt", version = "unspecified" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
+compose = [
+    "androidx-compose-bom",
+    "androidx-compose-ui",
+    "androidx-compose-foundation",
+    "androidx-compose-animation",
+    "androidx-compose-ui-tooling-preview"
+]
+
+material3 = [
+    "androidx-compose-material3",
+    "androidx-compose-icons",
+    "androidx-compose-fonts",
+    "material-kolor",
+]
+
+navigation = [
+    "androidx-compose-activity",
+    "androidx-navigation3",
+]
+
+androidx = [
+    "androidx-core-ktx",
+    "androidx-appcompat",
+]
+
+lifecycle = [
+    "androidx-lifecycle-runtime-compose",
+    "androidx-lifecycle-viewModel-compose",
+]
+
+hilt = [
+    "hilt-android",
+    "androidx-hilt",
+    "javaxInject",
+]
+
+serialization = [
+    "kotlinx-serialization-protobuf",
+]
+
+material = [
+    "android-material",
+]
+
+adaptive = [
+    "androidx-compose-material3-adaptive",
+    "androidx-compose-material3-adaptive-layout",
+    "androidx-compose-material3-adaptive-navigation",
+]
+
+core = [
+    "okhttp",
+    "rei",
+    "tabler-icon",
+]
+
+testing = [
+    "junit",
+    "kotlinx-coroutines-test",
+    "mockk",
+    "turbine",
+    "androidx-core-testing",
+]
+
+network = [
+    "retrofit-core",
+    "retrofit-converter-gson",
+    "okhttp-logging-interceptor",
+]
