@@ -1,27 +1,27 @@
 [versions]
 # Build
-androidGradlePlugin = "9.2.1"
+androidGradlePlugin = "9.3.2"
 projectguard = "1.0.0-rc03"
 coreTesting = "2.2.0"
 junit = "4.13.2"
-kotlin = "2.3.21"
+kotlin = "2.4.10"
 kotlinxCoroutines = "1.11.0"
-ksp = "2.3.9"
+ksp = "2.3.11"
 
 # DI
-hilt = "2.59.2"
-hiltNavigation = "1.3.0"
+hilt = "2.60.1"
+hiltNavigation = "1.4.0"
 
 # AndroidX
-androidxCore = "1.18.0"
-androidxAppcompat = "1.7.1"
+androidxCore = "1.19.0"
+androidxAppcompat = "1.8.0"
 androidxActivity = "1.13.0"
 androidxLifecycle = "2.10.0"
 androidxDatastore = "1.2.1"
 
 # Compose
-composeBom = "2026.05.01"
-composeMaterial3 = "1.5.0-alpha20"
+composeBom = "2026.08.00"
+composeMaterial3 = "1.5.0-alpha27"
 composeMaterial3Adaptive = "1.2.0"
 composeIcons = "1.7.8"
 composeUi = "1.11.2"
@@ -30,17 +30,17 @@ navigation3 = "1.1.2"
 
 # Material
 androidMaterial = "1.14.0"
-materialKolor = "4.1.1"
+materialKolor = "5.0.1"
 
 # Other
 kotlinxSerialization = "1.11.0"
 javaxInject = "1"
 lsparanoid = "0.6.0"
 integrity = "1.6.0"
-okhttp = "5.3.2"
+okhttp = "5.5.0"
 retrofit = "3.0.0"
 rei = "1.1.3"
-tablerIcon = "3.44.0"
+tablerIcon = "3.46.0"
 turbine = "1.2.1"
 
 [libraries]
