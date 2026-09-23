@@ -17,6 +17,7 @@ class LibraryConventionPlugin : Plugin<Project> {
 
             extensions.configure<LibraryExtension> {
                 compileSdk = 37
+                compileSdkMinor = 1
                 buildToolsVersion = "37.0.0"
 
                 defaultConfig {

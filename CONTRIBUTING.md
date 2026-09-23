@@ -63,7 +63,7 @@ Securify strictly follows Google's modern Android architecture recommendations:
 - **UI Toolkit**: 100% Jetpack Compose with Material 3 Expressive and Liquid Glass. No legacy XML views (except native ad layouts in `app/src/play`).
 - **Navigation**: AndroidX Navigation 3 (`androidx.navigation3`).
 - **Dependency Injection**: Dagger Hilt.
-- **Architectural Guardrails**: Boundary rules enforced via `ProjectGuard`. UI modules must never depend on data/network modules.
+- **Architectural Guardrails**: Strict modular boundaries — UI modules must never depend on data or network modules.
 
 ---
 

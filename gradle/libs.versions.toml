@@ -1,12 +1,11 @@
 [versions]
 # Build
-androidGradlePlugin = "9.2.1"
-projectguard = "1.0.0-rc03"
+androidGradlePlugin = "9.3.1"
 coreTesting = "2.2.0"
 junit = "4.13.2"
-kotlin = "2.3.21"
+kotlin = "2.4.20"
 kotlinxCoroutines = "1.11.0"
-ksp = "2.3.9"
+ksp = "2.3.12"
 
 # DI
 hilt = "2.59.2"
@@ -113,7 +112,6 @@ turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-projectguard = { id = "com.rubensousa.projectguard", version.ref = "projectguard" }
 lsp = { id = "org.lsposed.lsparanoid", version.ref = "lsparanoid" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

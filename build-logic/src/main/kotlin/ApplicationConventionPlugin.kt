@@ -17,6 +17,7 @@ class ApplicationConventionPlugin : Plugin<Project> {
 
             extensions.configure<ApplicationExtension> {
                 compileSdk = 37
+                compileSdkMinor = 1
                 buildToolsVersion = "37.0.0"
 
                 defaultConfig {

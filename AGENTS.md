@@ -43,7 +43,7 @@ This document establishes the architectural principles, development standards, o
 
 ## 3. Architecture & Modular Boundaries
 
-The project adheres to Google's official Android Architecture Guidelines and enforces strict modular boundaries via **ProjectGuard**:
+The project adheres to Google's official Android Architecture Guidelines and enforces strict modular boundaries:
 
 ```
 Securify/
@@ -56,7 +56,7 @@ Securify/
     └── network/                  # Network configuration, Retrofit, OkHttp clients, API interfaces
 ```
 
-### Modular Boundary Rules (ProjectGuard)
+### Modular Boundary Rules
 - **`:core:datastore`** must remain completely isolated from UI dependencies (`:core:designsystem`, Compose, etc.).
 - **`:core:designsystem`** must remain completely isolated from persistence (`:core:datastore`) or network (`:core:network`) libraries.
 - **`:core:network`** must not depend on UI libraries (`:core:designsystem`).
