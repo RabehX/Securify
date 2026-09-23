@@ -1,8 +1,7 @@
 plugins {
     alias(libs.plugins.self.library)
-    alias(libs.plugins.hilt)
+    alias(libs.plugins.self.hilt)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.ksp)
 }
 
 android {
@@ -10,8 +9,11 @@ android {
 }
 
 dependencies {
-    ksp(libs.hilt.compiler)
+    implementation(project(":core:common"))
     implementation(libs.androidx.datastore.core)
-    implementation(libs.bundles.hilt)
     implementation(libs.bundles.serialization)
+
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.turbine)
 }
