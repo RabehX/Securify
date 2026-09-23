@@ -1,0 +1,57 @@
+name: Feature Request
+description: Propose a new security check, detection heuristic, or enhancement for Securify
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea to expand Securify's security auditing or improve the user experience?
+        Please describe your proposal below.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement or Threat Scenario
+      description: What privilege escalation, root hiding technique, or security limitation does this address?
+      placeholder: Describe the problem or scenario...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution or Heuristic
+      description: Explain the proposed capability, detection routine, or user experience change.
+      placeholder: Detailed description of what should happen and how it benefits the security audit...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Security Domain / Functional Area
+      description: Select the target domain within Securify.
+      options:
+        - "Rei Security Domain: Root Detection (KernelSU, Magisk, APatch)"
+        - "Rei Security Domain: Injection Detection (Frida, Memory hooks)"
+        - "Rei Security Domain: Framework Detection (Xposed, LSPosed)"
+        - "Rei Security Domain: Emulator Detection"
+        - "Rei Security Domain: System Integrity & Mount Auditing"
+        - "Google Play Integrity API Checks & Verdict Decoding"
+        - "Liquid Glass User Interface & Material 3 Theming"
+        - "Hardware & Kernel Diagnostics"
+        - "Diagnostic Exporting & SAF System Log Auditing"
+        - "Flavors & Distribution (FOSS vs Google Play)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative implementations, libraries, or workarounds you considered.
+      placeholder: Describe alternatives...
+    validations:
+      required: false

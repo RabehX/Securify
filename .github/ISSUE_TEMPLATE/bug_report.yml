@@ -1,0 +1,137 @@
+name: Bug Report
+description: Report an unexpected crash, false verdict, or malfunction in Securify
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue in Securify!
+        Please search existing issues before filing a duplicate report.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the observed issue or false verdict.
+      placeholder: Describe the issue...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: app_flavor
+    attributes:
+      label: Application Flavor / Build Type
+      description: Which build flavor of Securify are you using?
+      options:
+        - "FOSS (GitHub Releases / F-Droid — No tracking or ads)"
+        - "Google Play Store (Includes AdMob, UMP Consent & Play Services)"
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Step-by-step instructions to reproduce the behavior.
+      placeholder: |
+        1. Open Securify
+        2. Tap 'Scan Device' (or trigger Play Integrity verification)
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs Actual Behavior
+      description: What was expected to happen versus what actually occurred?
+      placeholder: Expected the check to pass / report correctly, but got...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected_domain
+    attributes:
+      label: Affected Component or Security Domain
+      description: Select the specific functional area or Rei 2.0 security domain involved.
+      options:
+        - "Root Detection Domain (Magisk / KernelSU / APatch / su binaries)"
+        - "Injection Detection Domain (Frida / Native hooks / Memory manipulation)"
+        - "Framework Detection Domain (Xposed / LSPosed / EdXposed)"
+        - "Emulator Detection Domain (AVD / Genymotion / BlueStacks)"
+        - "System Integrity Domain (Mounts / SELinux / Props)"
+        - "Google Play Integrity API (Attestation verdicts & backend checks)"
+        - "Liquid Glass UI & Material 3 Theming (AMOLED / Seed Picker)"
+        - "Hardware & System Diagnostics (Kernel / ABI / Patch Level)"
+        - "Logcat Export & Diagnostics (Storage Access Framework)"
+        - "Ads & UMP Consent (Google Play flavor only)"
+        - "Localization & Languages (Arabic / English)"
+        - "App Crash on Launch"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: android_version
+    attributes:
+      label: Android OS Version
+      description: What Android version is running on your device?
+      options:
+        - "Android 16 (API 36)"
+        - "Android 15 (API 35)"
+        - "Android 14 (API 34)"
+        - "Android 13 (API 33)"
+        - "Android 12 / 12L (API 31 / 32)"
+        - "Android 11 (API 30)"
+        - "Android 10 (API 29)"
+        - "Android 9 Pie (API 28)"
+        - "Android 8.0 / 8.1 Oreo (API 26 / 27)"
+        - "Custom ROM / Emulator"
+    validations:
+      required: true
+
+  - type: input
+    id: device_model
+    attributes:
+      label: Device Manufacturer & Model
+      description: Exact device model used.
+      placeholder: "e.g., Google Pixel 9 Pro, Samsung Galaxy S24 Ultra, Xiaomi 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: root_environment
+    attributes:
+      label: Root / Privilege Escalation Solution
+      description: Which environment or root framework is installed?
+      options:
+        - "Stock (Unrooted, Locked Bootloader)"
+        - "KernelSU"
+        - "Magisk"
+        - "APatch"
+        - "Other / Custom su Binary"
+        - "Android Emulator (AVD / Genymotion)"
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Securify Version & Build Number
+      description: Found in Settings or app info.
+      placeholder: "e.g., 2.0.0 (Build 10500) or 1.4.0 (10400)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logcat
+    attributes:
+      label: Logcat Output / Diagnostics
+      description: |
+        Paste filtered logcat logs or use the built-in diagnostic export from:
+        **Settings -> Export Logcat**.
+      placeholder: "Paste logs here..."
+    validations:
+      required: false

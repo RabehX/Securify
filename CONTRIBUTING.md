@@ -8,10 +8,10 @@ Securify is free and open-source software licensed under the **GNU General Publi
 
 ## Ways to Contribute
 
-- **Report Bugs**: Submit detailed issues if you experience unexpected crashes or false verdicts.
-- **Suggest Features**: Open an issue describing ideas for new security checks or UX improvements.
+- **Report Bugs**: Submit detailed issues if you experience unexpected crashes, false verdicts, or detection anomalies.
+- **Suggest Features**: Open an issue describing ideas for new security checks, threat heuristics, or UX improvements.
 - **Improve Documentation**: Fix typos, clarify guides, or expand localization.
-- **Submit Pull Requests**: Implement bug fixes or approved features.
+- **Submit Pull Requests**: Implement bug fixes, add detection routines, or contribute approved features.
 
 ---
 
@@ -33,11 +33,14 @@ To build and run Securify locally, ensure your workstation has:
 git clone https://github.com/RabehX/Securify.git
 cd Securify
 
-# Assemble debug APK
-./gradlew assembleDebug
+# Assemble debug APK for FOSS flavor (default)
+./gradlew :app:assembleFossDebug
 
-# Run unit tests
-./gradlew testDebugUnitTest
+# Assemble debug APK for Play Store flavor
+./gradlew :app:assemblePlayDebug
+
+# Run unit test suites across flavors
+./gradlew :app:testFossDebugUnitTest :app:testPlayDebugUnitTest
 ```
 
 ---
@@ -47,15 +50,20 @@ cd Securify
 Securify strictly follows Google's modern Android architecture recommendations:
 
 - **Modularization**:
-  - `:app` — Main application orchestrator, navigation host, and screens.
-  - `:core:datastore` — Preferences persistence (ProtoBuf + DataStore).
-  - `:core:designsystem` — Reusable Material 3 Expressive UI components and design tokens.
+  - `:app` — Application orchestrator, screens, navigation host, and flavors (`foss` / `play`).
+  - `:core:common` — Shared coroutine dispatchers, common utilities, and primitives.
+  - `:core:datastore` — Preferences persistence (ProtoBuf + DataStore Core).
+  - `:core:designsystem` — Reusable Material 3 Expressive UI components, Liquid Glass, and typography tokens.
+  - `:core:network` — Isolated network layer (Retrofit 3, OkHttp 5, API interfaces).
   - `:build-logic` — Composite build with convention plugins.
-- **Architecture**: MVVM with Unidirectional Data Flow (UDF). Screens observe `StateFlow` and send user intents to ViewModels.
-- **UI Toolkit**: 100% Jetpack Compose with Material 3 Expressive. No legacy XML views.
+- **Security Engine**: Powered by **Rei 2.0.0** native multi-domain threat detection (Root, Injection, Framework, Emulator, System Integrity).
+- **Flavors**:
+  - `foss` (default): Strictly open-source, zero ads, zero telemetry.
+  - `play`: Integrates Google Mobile Ads (AdMob), UMP consent, and Firebase Crashlytics.
+- **UI Toolkit**: 100% Jetpack Compose with Material 3 Expressive and Liquid Glass. No legacy XML views (except native ad layouts in `app/src/play`).
 - **Navigation**: AndroidX Navigation 3 (`androidx.navigation3`).
 - **Dependency Injection**: Dagger Hilt.
-- **Architectural Guardrails**: Boundary rules enforced via `ProjectGuard`. `:core:datastore` and `:core:designsystem` must remain strictly decoupled.
+- **Architectural Guardrails**: Boundary rules enforced via `ProjectGuard`. UI modules must never depend on data/network modules.
 
 ---
 
@@ -76,13 +84,13 @@ We enforce the **Conventional Commits v1.0.0** standard:
 
 | Prefix | Description | Example |
 | :--- | :--- | :--- |
-| `feat:` | New user-facing feature | `feat(integrity): add device activity level verdict` |
+| `feat:` | New user-facing feature | `feat(rei): add injection threat detection mapping` |
 | `fix:` | Bug fix | `fix(ui): correct dark mode contrast on AMOLED theme` |
 | `docs:` | Documentation changes | `docs: update CONTRIBUTING guide` |
-| `refactor:` | Code restructuring without feature changes | `refactor: migrate Home screen to design system components` |
-| `test:` | Adding or updating tests | `test: add unit tests for SettingsViewModel` |
+| `refactor:` | Code restructuring without feature changes | `refactor(network): extract api interfaces into core:network` |
+| `test:` | Adding or updating tests | `test: add unit tests for SecurifyRepository` |
 | `ci:` | GitHub Actions workflow changes | `ci: add pull request validation workflow` |
-| `build:` | Dependency updates or Gradle changes | `build(deps): bump compose to 1.5.0` |
+| `build:` | Dependency updates or Gradle changes | `build(deps): bump hilt to 2.60.1` |
 | `chore:` | Miscellaneous maintenance | `chore: update .gitignore` |
 
 ---
@@ -93,8 +101,9 @@ We enforce the **Conventional Commits v1.0.0** standard:
 2. **Branch from master**: Create a feature branch with a descriptive name (`git checkout -b feature/my-feature`).
 3. **Verify Locally**:
    ```bash
-   ./gradlew testDebugUnitTest
-   ./gradlew lintDebug
+   ./gradlew :app:assembleFossDebug
+   ./gradlew :app:testFossDebugUnitTest
+   ./gradlew :app:lintFossRelease
    ```
 4. **Submit PR**: Open a PR against `master` using the PR template.
 5. **UI Changes**: If your PR modifies UI, include before/after screenshots.
