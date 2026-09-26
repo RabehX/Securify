@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.self.library)
+    alias(libs.plugins.self.hilt)
 }
 
 android {
@@ -8,4 +9,5 @@ android {
 
 dependencies {
     implementation(libs.bundles.hilt)
+    implementation(libs.androidx.core.ktx)
 }
