@@ -1,0 +1,131 @@
+<resources>
+    <!-- Home -->
+    <string name="overview">Visão geral</string>
+    <string name="version">Versão: %1$s (código %2$d)</string>
+    <string name="detections">Detecções</string>
+    <string name="play_integrity">Integridade</string>
+
+    <!-- Home / Device Info -->
+    <string name="kernel_version">Versão do Kernel</string>
+    <string name="device_name">Nome do Dispositivo</string>
+    <string name="system_abi">ABI do Sistema</string>
+    <string name="system_version">Versão do sistema</string>
+    <string name="security_patch_level">Nível do Patch de Segurança</string>
+    <string name="fingerprint">Fingerprint</string>
+
+    <!-- Settings -->
+    <string name="settings">Configurações</string>
+    <string name="settings_general">Geral</string>
+    <string name="settings_appearance">Aparência</string>
+    <string name="settings_legalities">Aspectos Legais</string>
+    <string name="settings_about">Sobre</string>
+
+    <!-- Settings - General -->
+    <string name="battery_configuration">Otimização de Bateria</string>
+    <string name="battery_configuration_desc">Ignore a otimização de bateria para um melhor desempenho.</string>
+    <string name="language">Idioma</string>
+    <string name="export_logcat">Exportar Logcat</string>
+    <string name="export_logcat_desc">Salve a saída detalhada do logcat como um arquivo de texto para depuração ou compartilhamento.</string>
+    <string name="export_logcat_directory">Diretório de Exportação</string>
+    <string name="export_logcat_directory_desc">Escolha onde salvar as exportações do logcat.</string>
+
+    <!-- Settings - Appearance -->
+    <string name="dynamic_color">Cor Dinâmica</string>
+    <string name="dynamic_color_desc">Aplicar a cor do papel de parede ao tema do app</string>
+    <string name="amoled_theme">Tema AMOLED</string>
+    <string name="amoled_theme_desc">Aplicar preto puro quando o modo escuro estiver ativo</string>
+    <string name="theme">Tema</string>
+    <string name="theme_color">Cor do Tema</string>
+    <string name="select_theme_color">Selecionar Cor do Tema</string>
+    <string name="theme_color_mocha_mousse">Mocha Mousse</string>
+    <string name="theme_color_peach_fuzz">Peach Fuzz</string>
+    <string name="theme_color_viva_magenta">Viva Magenta</string>
+    <string name="theme_color_very_peri">Very Peri</string>
+    <string name="theme_color_ultimate_gray">Ultimate Gray</string>
+    <string name="theme_color_illuminating">Illuminating</string>
+    <string name="theme_color_classic_blue">Classic Blue</string>
+    <string name="theme_color_living_coral">Living Coral</string>
+    <string name="system_default">Padrão do Sistema</string>
+    <string name="light">Claro</string>
+    <string name="dark">Escuro</string>
+
+    <!-- Settings - Legalities -->
+    <string name="disclaimer">Aviso Legal</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="terms_of_service">Termos de Serviço</string>
+
+    <!-- Settings - About -->
+    <string name="support">Suporte</string>
+    <string name="github">GitHub</string>
+    <string name="telegram">Telegram</string>
+    <string name="device_recognition_verdict">Veredito de reconhecimento do dispositivo</string>
+
+    <!-- Play Integrity -->
+    <string name="app_recognition_verdict">Veredito de Reconhecimento do App</string>
+    <string name="package_name">Nome do Pacote</string>
+    <string name="device_activity_level">Nível de Atividade do Dispositivo</string>
+    <string name="app_licensing_verdict">Veredito de Licenciamento do App</string>
+    <string name="certificate_sha256">SHA256 do Certificado</string>
+
+    <string name="threats_found">Ameaças Encontradas</string>
+    <string name="all_clear">Tudo Limpo</string>
+    <string name="tap_to_view">Toque para ver</string>
+    <string name="back">Voltar</string>
+
+    <!-- Integrity -->
+    <string name="integrity_requesting">Solicitando…</string>
+    <string name="integrity_run">Executar Solicitação do Play Integrity</string>
+    <string name="integrity_basic">Integridade Básica</string>
+    <string name="integrity_device">Integridade do Dispositivo</string>
+    <string name="integrity_strong">Integridade Forte</string>
+    <string name="integrity_passed">Aprovado</string>
+    <string name="integrity_failed">Reprovado</string>
+    <string name="integrity_error">Falha na verificação de integridade</string>
+    <string name="integrity_retry">Tentar novamente</string>
+    <string name="integrity_dismiss">Dispensar</string>
+
+    <!-- Integrity Error Code Names -->
+    <string name="integrity_code_no_error">Sem Erro</string>
+    <string name="integrity_code_api_not_available">API Indisponível</string>
+    <string name="integrity_code_play_store_not_found">Play Store Não Encontrada</string>
+    <string name="integrity_code_network_error">Erro de Rede</string>
+    <string name="integrity_code_account_not_found">Conta da Play Store Não Encontrada</string>
+    <string name="integrity_code_app_not_installed">App Não Instalado</string>
+    <string name="integrity_code_play_services_not_found">Play Services Não Encontrado</string>
+    <string name="integrity_code_uid_mismatch">Incompatibilidade de UID do App</string>
+    <string name="integrity_code_too_many_requests">Solicitações em Excesso</string>
+    <string name="integrity_code_cannot_bind">Não É Possível Vincular ao Serviço</string>
+    <string name="integrity_code_nonce_too_short">Nonce Muito Curto</string>
+    <string name="integrity_code_nonce_too_long">Nonce Muito Longo</string>
+    <string name="integrity_code_server_unavailable">Servidor do Google Indisponível</string>
+    <string name="integrity_code_nonce_not_base64">Nonce Não É Base64</string>
+    <string name="integrity_code_play_store_outdated">Versão da Play Store Desatualizada</string>
+    <string name="integrity_code_play_services_outdated">Versão do Play Services Desatualizada</string>
+    <string name="integrity_code_cloud_project_invalid">Número do Projeto na Nuvem Inválido</string>
+    <string name="integrity_code_client_transient">Erro Transitório do Cliente</string>
+    <string name="integrity_code_internal_error">Erro Interno</string>
+    <string name="integrity_code_unknown">Erro Desconhecido</string>
+
+    <!-- Integrity Error Help Messages -->
+    <string name="integrity_error_prefix">Falha no Play Integrity: %1$s (%2$d). %3$s</string>
+    <string name="integrity_error_prefix_short">Falha no Play Integrity: %1$s (%2$d)</string>
+    <string name="integrity_error_generic">Falha no Play Integrity: %1$s</string>
+    <string name="integrity_help_api_not_available">A API do Play Integrity não está disponível neste dispositivo ou nesta versão da Play Store.</string>
+    <string name="integrity_help_play_store_not_found">Instale ou ative a Google Play Store oficial.</string>
+    <string name="integrity_help_network_error">Verifique a conexão de rede e tente novamente.</string>
+    <string name="integrity_help_account_not_found">Faça login na Play Store e tente novamente.</string>
+    <string name="integrity_help_app_not_installed">Instale o app pela Google Play para ter suporte completo ao veredito.</string>
+    <string name="integrity_help_play_services_not_found">Instale ou ative o Google Play Services.</string>
+    <string name="integrity_help_uid_mismatch">O UID do app que fez a chamada não corresponde ao pacote instalado pela Play.</string>
+    <string name="integrity_help_too_many_requests">Foram feitas solicitações em excesso. Tente novamente mais tarde.</string>
+    <string name="integrity_help_cannot_bind">Atualize a Google Play Store e tente novamente.</string>
+    <string name="integrity_help_nonce_too_short">O nonce é muito curto.</string>
+    <string name="integrity_help_nonce_too_long">O nonce é muito longo.</string>
+    <string name="integrity_help_server_unavailable">Os servidores do Google estão temporariamente indisponíveis. Tente novamente mais tarde.</string>
+    <string name="integrity_help_nonce_not_base64">O nonce não é aceito pelo Play Integrity.</string>
+    <string name="integrity_help_play_store_outdated">Atualize a Google Play Store.</string>
+    <string name="integrity_help_play_services_outdated">Atualize o Google Play Services.</string>
+    <string name="integrity_help_cloud_project_invalid">Use o projeto do Google Cloud vinculado no Play Console ou omita o número do projeto na nuvem para apps distribuídos pela Play.</string>
+    <string name="integrity_help_client_transient">Erro temporário do cliente. Tente novamente mais tarde.</string>
+    <string name="integrity_help_internal_error">Erro interno do Play Integrity. Tente novamente mais tarde.</string>
+</resources>
