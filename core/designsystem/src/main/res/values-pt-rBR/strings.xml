@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Voltar</string>
+    <string name="threats_found">Ameaças Encontradas</string>
+    <string name="all_clear">Tudo Limpo</string>
+    <string name="tap_to_view">Toque para ver</string>
+</resources>
